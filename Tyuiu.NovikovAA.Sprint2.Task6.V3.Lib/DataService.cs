@@ -13,7 +13,7 @@ namespace Tyuiu.NovikovAA.Sprint2.Task6.V3.Lib
             {
                 case 1: return "понедельник";
                 case 2: return "вторник";
-                case 3: return "срекда";
+                case 3: return "среда";
                 case 4: return "четверг";
                 case 5: return "пятница";
                 case 6: return "суббота";
