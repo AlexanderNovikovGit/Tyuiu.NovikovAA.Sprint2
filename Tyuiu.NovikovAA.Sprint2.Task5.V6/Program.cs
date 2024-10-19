@@ -1,6 +1,4 @@
-﻿using Tyuiu.NovikovAA.Sprint2.Task4.V18.Lib;
-
-
+﻿using Tyuiu.NovikovAA.Sprint2.Task5.V6.Lib;
 
 Console.Title = "Спринт #2 | Выполнил: Новиков А. А. | РППб-24-1";
 Console.WriteLine("***************************************************************************");
@@ -20,12 +18,19 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-int x;
-double res;
+int x, y;
 
-Console.WriteLine("Введите x");
+Console.WriteLine("Введите масть");
 x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение");
+y = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
+
+string res = "";
+DataService ds = new DataService();
+
+res = ds.FindCardNameAndValue(x, y);
+Console.WriteLine(res);
